@@ -1,0 +1,315 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Front.master.cs" Inherits="Web.MasterPage.Front" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <%=ITitle %>-<%=CompanyName %>-管理系统</title>
+
+    <script type="text/javascript" src="/js/jquery-1.4.4.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.boxy.js"></script>
+
+    <script type="text/javascript" src="/js/datepicker/wdatepicker.js"></script>
+
+    <script type="text/javascript" src="/js/bt.min.js"></script>
+
+    <!--[if IE]><script src="/js/excanvas.js" type="text/javascript" charset="utf-8"></script><![endif]-->
+    <!--[if lt IE 7]>
+        <script type="text/javascript" src="/js/unitpngfix.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/js/moveScroll.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.blockUI.js"></script>
+
+    <script type="text/javascript" src="/js/table-toolbar.js"></script>
+
+    <script type="text/javascript" src="/js/newjquery.autocomplete.js"></script>
+
+    <script type="text/javascript" src="/js/validatorform.js"></script>
+
+    <script type="text/javascript" src="/js/swfupload/swfupload.js"></script>
+
+    <script type="text/javascript" src="/js/utilsuri.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/boxy.css" />
+    <link rel="stylesheet" type="text/css" href="/css/swfupload/default.css" />
+
+    <script type="text/javascript">
+        function clock() { var _t = new Date(); var _w = _t.getDay(); var _h = _t.getHours(); var _m = _t.getMinutes(); var _s = _t.getSeconds(); var _h1 = _h; var _m1 = _m; var _s1 = _s; if (_h < 10) { _h1 = "0" + _h }; if (_m < 10) { _m1 = "0" + _m }; if (_s < 10) { _s1 = "0" + _s }; $("#span_clock").html(_h1 + ":" + _m1 + ":" + _s1); }
+        function leftmenu() { $(".lineProduct h2").click(function() { var h = $(this); var $a = h.next(); if ($a.length == 0) return; $a.toggle(); var b = true; if ($a.css("display") == "none") b = false; $a.prev("h2").toggleClass("firstNav", b); }); }
+        $(document).ready(function() { setInterval(clock, 1000); leftmenu(); });
+    </script>
+
+    <style type="text/css">
+        #demo1
+        {
+            position: absolute;
+            width: 900px;
+            height: 25px;
+            overflow: hidden;
+        }
+        #demo1 ul li
+        {
+            float: left;
+            padding: 0 10px;
+            line-height: 29px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- wrapper start -->
+    <div id="wrapper" class="mid">
+        <!-- top start -->
+        <div class="top">
+            <div class="topleft">
+                <img src="<%=LogoFilePath %>" alt="" /></div>
+            <div class="topright">
+                <p>
+                    当前用户：<%=CompanyName %>-<%=UserXingMing %><br />
+                    <a href="/">
+                        <img alt="" src="/images/homeicon.gif" alt="" />
+                        网站首页</a> <a href="javascript:void(0);" id="a_updateUser" title="点击修改个人信息">
+                            <img src="/images/xiugaimima.gif" alt="点击修改个人信息" />
+                            修改密码</a> <a href="/logout.aspx">
+                                <img alt="" src="/images/safeicon.gif" alt="" />
+                                安全退出</a>
+                </p>
+                <div class="time">
+                    <img width="22" height="22" alt="" src="/images/dateicon.png">
+                    <%=DateTime.Now.ToString("yyyy年M月d日 dddd")   %>
+                    现在时间：<span id="span_clock">00:00:00</span>
+                </div>
+            </div>
+        </div>
+        <div id="gonggaobox" runat="server">
+            <div class="scrollDivbtn">
+                <div id="scrollDiv" class="inno">
+                    <div id="demo1">
+                        <ul>
+                            <asp:Repeater runat="server" ID="RptList">
+                                <ItemTemplate>
+                                    <li><a href='/CompanyFiles/NoticeDetail.aspx?Id=<%#Eval("Id") %>' target="_blank">
+                                        <%#Eval("Title")%></a></li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top end -->
+        <div class="main">
+            <!--left start-->
+            <div class="left">
+                <div class="lineProduct" runat="server" id="div_1">
+                    <h2 runat="server" id="h2_1">
+                        <a href="javascript:void(0);">计调中心</a></h2>
+                    <ul runat="server" id="ul_1" style="display: none;">
+                        <li runat="server" id="li_1"><a runat="server" id="a_1" href="/jidiaoCenter/TeamList.aspx">
+                            确认件登记</a></li>
+                        <li runat="server" id="li_2"><a runat="server" id="a_2" href="/jidiaoCenter/DijieList.aspx">
+                            地接安排</a></li>
+                        <li runat="server" id="li_3"><a runat="server" id="a_3" href="/jidiaoCenter/TicketList.aspx">
+                            票务安排</a></li>
+                        <li runat="server" id="li_4"><a runat="server" id="a_4" href="/jidiaoCenter/VisitList.aspx">
+                            回访提醒</a></li>
+           <%--             <li runat="server" id="li_5"><a runat="server" id="a_5" href="/jidiaoCenter/FankuiList.aspx">
+                            团队质量反馈</a></li>--%>
+                        <li runat="server" id="li_6"><a runat="server" id="a_6" href="/jidiaoCenter/RouteList.aspx">
+                            线路管理</a></li>
+                        <li runat="server" id="li_38"><a runat="server" id="a_38" href="/jidiaoCenter/TourData.aspx">
+                            团队报价资料库</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div_2">
+                    <h2 class="firstNav" runat="server" id="h2_2">
+                        <a href="javascript:void(0);">供应商管理</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_2">
+                        <li runat="server" id="li_7"><a runat="server" id="a_7" href="/ResourceManage/GroundList.aspx">
+                            地接</a></li>
+                        <li runat="server" id="li_8"><a runat="server" id="a_8" href="/ResourceManage/TicketList.aspx">
+                            票务</a></li>
+                        <li runat="server" id="li_9"><a runat="server" id="a_9" href="/ResourceManage/HotelList.aspx">
+                            酒店</a></li>
+                        <li runat="server" id="li_10"><a runat="server" id="a_10" href="/ResourceManage/DinnerList.aspx">
+                            餐馆</a></li>
+                        <li runat="server" id="li_11"><a runat="server" id="a_11" href="/ResourceManage/ScenicList.aspx">
+                            景点</a></li>
+                        <li runat="server" id="li_12"><a runat="server" id="a_12" href="/ResourceManage/GuideList.aspx">
+                            导游</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div_3">
+                    <h2 class="firstNav" runat="server" id="h2_3">
+                        <a href="javascript:void(0);">财务管理</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_3">
+                        <li runat="server" id="li_13"><a runat="server" id="a_13" href="/Fin/YingShou.aspx">
+                            应收管理(新团审核)</a></li>
+                        <li runat="server" id="li_14"><a runat="server" id="a_14" href="/Fin/DiJieYingFu.aspx">
+                            应付管理(地接、票务)</a></li>
+                        <li runat="server" id="li_15"><a runat="server" id="a_15" href="/Fin/OtherIncome.aspx">
+                            其它收入</a></li>
+                        <li runat="server" id="li_16"><a runat="server" id="a_16" href="/Fin/OtherPay.aspx">
+                            其它支出</a></li>
+                        <li runat="server" id="li_17"><a runat="server" id="a_17" href="/Fin/ChuNaDengZhang.aspx">
+                            出纳登帐</a></li>
+                        <li runat="server" id="li_18"><a runat="server" id="a_18" href="/Fin/Bank.aspx">银行余额</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div_4">
+                    <h2 class="firstNav" runat="server" id="h2_4">
+                        <a href="javascript:void(0);">统计中心</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_4">
+                        <li runat="server" id="li_19"><a runat="server" id="a_19" href="/TongJi/TuanAndSan.aspx">
+                            团散统计</a></li>
+                        <li runat="server" id="li_20"><a runat="server" id="a_20" href="/TongJi/Customer.aspx">
+                            组团社统计</a></li>
+                        <li runat="server" id="li_21"><a runat="server" id="a_21" href="/TongJi/SaleArea.aspx">
+                            销售地区统计</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div_5">
+                    <h2 class="firstNav" runat="server" id="h2_5">
+                        <a href="javascript:void(0);">客户管理</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_5">
+                        <li runat="server" id="li_22"><a runat="server" id="a_22" href="/CustomerManage/CustomerGuanhuai.aspx">
+                            客户关怀</a></li>
+                        <li runat="server" id="li_23"><a runat="server" id="a_23" href="/CustomerManage/CustomerList.aspx">
+                            客户资料</a></li>
+                        <li runat="server" id="li_24"><a runat="server" id="a_24" href="/CustomerManage/YuangongList.aspx">
+                            生日中心</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div_6">
+                    <h2 class="firstNav" runat="server" id="h2_6">
+                        <a href="javascript:void(0);">客户询价</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_6">
+                        <li runat="server" id="li_25"><a runat="server" id="a_25" href="/CustomerManage/CustomerQuote.aspx">
+                            客户日常询价</a></li>
+                        <li runat="server" id="li_26"><a runat="server" id="a_26" href="/CustomerManage/Outreach.aspx">
+                            外联每天足迹</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div9">
+                    <h2 class="firstNav" runat="server" id="h2_9">
+                        <a href="javascript:void(0);">公司文件</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_9">
+                        <li runat="server" id="li_27"><a runat="server" id="a_27" href="/CompanyFiles/MsgManageList.aspx">
+                            公告通知<img src="/images/new.gif" runat="server" id="ImgNewNotice" alt="有新公告或未读公告" /></a></li>
+                        <li runat="server" id="li_28"><a runat="server" id="a_28" href="/CompanyFiles/FileList.aspx">
+                            文档管理</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div_7">
+                    <h2 class="firstNav" runat="server" id="h2_7">
+                        <a href="javascript:void(0);">系统设置</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_7">
+                        <li runat="server" id="li_29"><a runat="server" id="a_29" href="/SystemSet/CityManage.aspx">
+                            基础设置</a></li>
+                        <li runat="server" id="li_30"><a runat="server" id="a_30" href="/SystemSet/DepartManage.aspx">
+                            组织机构</a></li>
+                        <li runat="server" id="li_31"><a runat="server" id="a_31" href="/SystemSet/RoleList.aspx">
+                            角色管理</a></li>
+                        <li runat="server" id="li_32"><a runat="server" id="a_32" href="/SystemSet/CompanyInfo.aspx">
+                            公司信息</a></li>
+                        <li runat="server" id="li_33"><a runat="server" id="a_33" href="/SystemSet/LoginLog.aspx">
+                            系统日志</a></li>
+                    </ul>
+                </div>
+                <div class="lineProduct" runat="server" id="div_8">
+                    <h2 class="firstNav" runat="server" id="h2_8">
+                        <a href="javascript:void(0);">短信中心</a></h2>
+                    <ul style="display: none;" runat="server" id="ul_8">
+                        <li runat="server" id="li_34"><a runat="server" id="a_34" href="/SMS/SendSms.aspx">发送短信</a></li>
+                        <li runat="server" id="li_35"><a runat="server" id="a_35" href="/SMS/SendHistory.aspx">
+                            发送历史</a></li>
+                        <li runat="server" id="li_36"><a runat="server" id="a_36" href="/SMS/CommonSms.aspx">
+                            常用短信</a></li>
+                        <li runat="server" id="li_37"><a runat="server" id="a_37" href="/SMS/AccountInfo.aspx">
+                            账户信息</a></li>
+                        <li runat="server" id="li_39"><a runat="server" id="a_39" href="/SMS/CustomerCare.aspx">
+                            短信关怀</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--left end-->
+            <div class="hr_10">
+            </div>
+            <div class="mainbody">
+                <div class="mainbody">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div class="clearboth">
+            </div>
+        </div>
+    </div>
+    <!-- wrapper end -->
+</body>
+</html>
+
+<script src="/JS/rolling.js" type="text/javascript"></script>
+
+<script src="/js/back.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+        <% DateTime tmpDate = DateTime.Now;%>
+        serverDate = new Date(
+        <%=tmpDate.Year %>,
+        <%=tmpDate.Month-1 %>,
+        <%=tmpDate.Day %>,
+        <%=tmpDate.ToString("HH") %>,
+        <%=tmpDate.Minute %>,
+        <%=tmpDate.Second %>);
+        setInterval('getNowDate()',1000);
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $("#demo1").kxbdMarquee({ isEqual: false });
+        if ("<%= IsTranRemind %>" == "1") {
+            setInterval(function() {
+                if (GetMinsFromTheLastLoginTime() >= 1) {
+                    $.newAjax({
+                        url: "/CommonPage/AwakePage.aspx",
+                        dataType: 'html',
+                        cache: false,
+                        success: function(msg) {
+                            if (msg) {
+                                var _width = 250;
+                                var _height = 200;
+                                var mywindow = window.open("", "awakewindow", "alwaysRaised=yes ,height=" + _height + "px, width=" + _width + "px,left=" + (window.screen.width - _width - 13) + ", top=" + (window.screen.height - _height - 58) + ", toolbar =no, menubar=no,directories=no, scrollbars=no, resizable=no, location=no, status=no");
+                                if (mywindow) {
+                                    mywindow.document.title = "新的提醒";
+                                    mywindow.document.body.style.fontSize = "12px";
+                                    mywindow.document.body.style.lineHeight = "15px";
+                                    var s = "http://" + mywindow.opener.location.host;
+                                    //mywindow.document.body.innerHTML = msg.replace(/http/g, s);
+                                    mywindow.document.body.innerHTML = "";
+                                    mywindow.document.write(msg.replace(/http/g, s))
+                                }
+                            }
+                        }
+                    });
+                }
+            }, <%=TanChuangTiXingInterval %>);
+        }
+
+        $("#a_updateUser").click(function() {
+            Boxy.iframeDialog({
+                title: "修改个人信息",
+                iframeUrl: "/SystemSet/EditUserInfo.aspx",
+                width: "820px",
+                height: "250px"
+            });
+            return false;
+        });
+    })
+</script>
+

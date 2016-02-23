@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mpage.master.cs" Inherits="Web.Webmaster.mpage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>WEBMASTER</title>
+    <link href="/webmaster/images/mpagecore.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.4.4.js"></script>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+    	function changeTrBgColor(obj, bgColor) {
+    		$(obj).css({ background: bgColor });
+    	}
+    	
+    	function confirmDelete() {
+    		if (confirm("你确定要删除吗？")) {
+    			return true;
+    		} else {
+    			return false;
+    		}
+    	}
+
+    	$(document).ready(function() {
+    		setTimeout(piframeResize, 1000);    		
+    	});
+
+    	function piframeResize() {
+    		try {
+    			parent.m.iframeResize();
+    		}
+    		catch (e) { }
+    	}
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <div id="MP">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td class="MP_up_left"></td>
+                                    <td class="MP_up_center" style=" vertical-align:middle"><img alt="" src="/webmaster/images/spacer.gif" /></td>
+                                    <td class="MP_up_right"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="MP_title">
+                        <asp:ContentPlaceHolder ID="PageTitle" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="MP_body">
+                        <div style="padding: 10px; position: relative">
+                            <!--内容开始-->
+                            <asp:ContentPlaceHolder ID="PageContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <!--内容结束-->
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="MP_tip">
+                        操作说明:<br />
+                        <asp:ContentPlaceHolder ID="PageRemark" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td class="MP_down_left"></td>
+                                    <td class="MP_down_center"><img alt="" src="/webmaster/images/spacer.gif" /></td>
+                                    <td class="MP_down_right"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

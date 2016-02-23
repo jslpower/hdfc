@@ -1,0 +1,188 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.BackgroundServices", "EyouSoft.BackgroundServices\EyouSoft.BackgroundServices.csproj", "{1B911605-491C-43E0-BD08-841DF5128840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Cache.Core", "EyouSoft.Cache.Core\EyouSoft.Cache.Core.csproj", "{DCC461DA-621F-47EE-85F3-B89DD6AD030F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Cache.Facade", "EyouSoft.Cache.Facade\EyouSoft.Cache.Facade.csproj", "{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Component.Factory", "EyouSoft.Component.Factory\EyouSoft.Component.Factory.csproj", "{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Config", "EyouSoft.Config\EyouSoft.Config.csproj", "{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Exception.Facade", "EyouSoft.Exception.Facade\EyouSoft.Exception.Facade.csproj", "{FE710F51-E721-4229-8179-2BD7F665AB77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Security.Membership", "EyouSoft.Security.Membership\EyouSoft.Security.Membership.csproj", "{AFA01A24-E10D-4B4C-BC41-C88537B7B314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Toolkit", "EyouSoft.Toolkit\EyouSoft.Toolkit.csproj", "{99A84C7E-8F77-45C7-865E-C84478BC1EDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WEBUtility", "WEBUtility", "{30714CB3-C288-411F-BF2B-C06FB339C954}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{304DA533-83AB-4A46-B3E9-A957B24FB675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlLibrary", "ControlLibrary\ControlLibrary.csproj", "{136A722D-1FF1-4EBD-80CB-B87B5CE441B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.BLL", "EyouSoft.BLL\EyouSoft.BLL.csproj", "{A9EF5495-F131-4C41-9AB4-5299F3234FE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.DAL", "EyouSoft.DAL\EyouSoft.DAL.csproj", "{1D1864DC-1F22-4B4F-B619-E47B29FE899E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.IDAL", "EyouSoft.IDAL\EyouSoft.IDAL.csproj", "{66BB5834-BDC3-412D-83D2-3E8E1CE10A47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Model", "EyouSoft.Model\EyouSoft.Model.csproj", "{E514E743-7EFC-4CAF-8249-4E72C97109E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyouSoft.Document", "EyouSoft.Document\EyouSoft.Document.csproj", "{BDD06D88-6827-4F20-8041-0BAC21F3FD92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{D750FDFB-63FD-4D81-952A-E3FE3F579726}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 17
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName1 = 华东风采.sln
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Common\\
+		SccProjectUniqueName2 = ControlLibrary\\ControlLibrary.csproj
+		SccProjectTopLevelParentUniqueName2 = 华东风采.sln
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = ControlLibrary\\
+		SccProjectUniqueName3 = EyouSoft.BackgroundServices\\EyouSoft.BackgroundServices.csproj
+		SccProjectTopLevelParentUniqueName3 = 华东风采.sln
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = EyouSoft.BackgroundServices\\
+		SccProjectUniqueName4 = EyouSoft.BLL\\EyouSoft.BLL.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = EyouSoft.BLL\\
+		SccProjectUniqueName5 = EyouSoft.Cache.Core\\EyouSoft.Cache.Core.csproj
+		SccProjectTopLevelParentUniqueName5 = 华东风采.sln
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = EyouSoft.Cache.Core\\
+		SccProjectUniqueName6 = EyouSoft.Cache.Facade\\EyouSoft.Cache.Facade.csproj
+		SccProjectTopLevelParentUniqueName6 = 华东风采.sln
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = EyouSoft.Cache.Facade\\
+		SccProjectUniqueName7 = EyouSoft.Component.Factory\\EyouSoft.Component.Factory.csproj
+		SccProjectTopLevelParentUniqueName7 = 华东风采.sln
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = EyouSoft.Component.Factory\\
+		SccProjectUniqueName8 = EyouSoft.Config\\EyouSoft.Config.csproj
+		SccProjectTopLevelParentUniqueName8 = 华东风采.sln
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = EyouSoft.Config\\
+		SccProjectUniqueName9 = EyouSoft.DAL\\EyouSoft.DAL.csproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = EyouSoft.DAL\\
+		SccProjectUniqueName10 = EyouSoft.Document\\EyouSoft.Document.csproj
+		SccLocalPath10 = .
+		SccProjectFilePathRelativizedFromConnection10 = EyouSoft.Document\\
+		SccProjectUniqueName11 = EyouSoft.Exception.Facade\\EyouSoft.Exception.Facade.csproj
+		SccProjectTopLevelParentUniqueName11 = 华东风采.sln
+		SccLocalPath11 = .
+		SccProjectFilePathRelativizedFromConnection11 = EyouSoft.Exception.Facade\\
+		SccProjectUniqueName12 = EyouSoft.IDAL\\EyouSoft.IDAL.csproj
+		SccLocalPath12 = .
+		SccProjectFilePathRelativizedFromConnection12 = EyouSoft.IDAL\\
+		SccProjectUniqueName13 = EyouSoft.Model\\EyouSoft.Model.csproj
+		SccLocalPath13 = .
+		SccProjectFilePathRelativizedFromConnection13 = EyouSoft.Model\\
+		SccProjectUniqueName14 = EyouSoft.Security.Membership\\EyouSoft.Security.Membership.csproj
+		SccProjectTopLevelParentUniqueName14 = 华东风采.sln
+		SccLocalPath14 = .
+		SccProjectFilePathRelativizedFromConnection14 = EyouSoft.Security.Membership\\
+		SccProjectUniqueName15 = EyouSoft.Toolkit\\EyouSoft.Toolkit.csproj
+		SccProjectTopLevelParentUniqueName15 = 华东风采.sln
+		SccLocalPath15 = .
+		SccProjectFilePathRelativizedFromConnection15 = EyouSoft.Toolkit\\
+		SccProjectUniqueName16 = Web\\Web.csproj
+		SccLocalPath16 = .
+		SccProjectFilePathRelativizedFromConnection16 = Web\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B911605-491C-43E0-BD08-841DF5128840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B911605-491C-43E0-BD08-841DF5128840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B911605-491C-43E0-BD08-841DF5128840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B911605-491C-43E0-BD08-841DF5128840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE710F51-E721-4229-8179-2BD7F665AB77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA01A24-E10D-4B4C-BC41-C88537B7B314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA01A24-E10D-4B4C-BC41-C88537B7B314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA01A24-E10D-4B4C-BC41-C88537B7B314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA01A24-E10D-4B4C-BC41-C88537B7B314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A84C7E-8F77-45C7-865E-C84478BC1EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A84C7E-8F77-45C7-865E-C84478BC1EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A84C7E-8F77-45C7-865E-C84478BC1EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A84C7E-8F77-45C7-865E-C84478BC1EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304DA533-83AB-4A46-B3E9-A957B24FB675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304DA533-83AB-4A46-B3E9-A957B24FB675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304DA533-83AB-4A46-B3E9-A957B24FB675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304DA533-83AB-4A46-B3E9-A957B24FB675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136A722D-1FF1-4EBD-80CB-B87B5CE441B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136A722D-1FF1-4EBD-80CB-B87B5CE441B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136A722D-1FF1-4EBD-80CB-B87B5CE441B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136A722D-1FF1-4EBD-80CB-B87B5CE441B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9EF5495-F131-4C41-9AB4-5299F3234FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9EF5495-F131-4C41-9AB4-5299F3234FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9EF5495-F131-4C41-9AB4-5299F3234FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9EF5495-F131-4C41-9AB4-5299F3234FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1864DC-1F22-4B4F-B619-E47B29FE899E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1864DC-1F22-4B4F-B619-E47B29FE899E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1864DC-1F22-4B4F-B619-E47B29FE899E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1864DC-1F22-4B4F-B619-E47B29FE899E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BB5834-BDC3-412D-83D2-3E8E1CE10A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BB5834-BDC3-412D-83D2-3E8E1CE10A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BB5834-BDC3-412D-83D2-3E8E1CE10A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BB5834-BDC3-412D-83D2-3E8E1CE10A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E514E743-7EFC-4CAF-8249-4E72C97109E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E514E743-7EFC-4CAF-8249-4E72C97109E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E514E743-7EFC-4CAF-8249-4E72C97109E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E514E743-7EFC-4CAF-8249-4E72C97109E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD06D88-6827-4F20-8041-0BAC21F3FD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD06D88-6827-4F20-8041-0BAC21F3FD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD06D88-6827-4F20-8041-0BAC21F3FD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD06D88-6827-4F20-8041-0BAC21F3FD92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D750FDFB-63FD-4D81-952A-E3FE3F579726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D750FDFB-63FD-4D81-952A-E3FE3F579726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D750FDFB-63FD-4D81-952A-E3FE3F579726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D750FDFB-63FD-4D81-952A-E3FE3F579726}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B911605-491C-43E0-BD08-841DF5128840} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{DCC461DA-621F-47EE-85F3-B89DD6AD030F} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{728E0C36-DB6C-4AA9-9D07-4BC970A706EA} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{39E0B5E4-4DF8-4CEC-BA23-476E43110AD4} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{FE710F51-E721-4229-8179-2BD7F665AB77} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{AFA01A24-E10D-4B4C-BC41-C88537B7B314} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{99A84C7E-8F77-45C7-865E-C84478BC1EDC} = {4AF6E55A-7F30-49B7-ABE1-61CC0E2814B9}
+		{304DA533-83AB-4A46-B3E9-A957B24FB675} = {30714CB3-C288-411F-BF2B-C06FB339C954}
+		{136A722D-1FF1-4EBD-80CB-B87B5CE441B5} = {30714CB3-C288-411F-BF2B-C06FB339C954}
+	EndGlobalSection
+EndGlobal

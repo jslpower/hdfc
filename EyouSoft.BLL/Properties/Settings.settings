@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EyouSoft.BLL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EyouSoft_BLL_SMSStructure_VoSmsServices_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://smc.myvo.cn/SMSWebService/Service.asmx</Value>
+    </Setting>
+    <Setting Name="EyouSoft_BLL_SMSStructure_TVoSmsServices_TESTSMS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:6127/SOAP/TESTSMS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

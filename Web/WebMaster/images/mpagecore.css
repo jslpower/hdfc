@@ -1,0 +1,44 @@
+﻿body {font-size: 14px; font-family: Verdana; margin-top:10px; margin-left:20px; margin-right:20px;}
+a:link {color: #31659C;text-decoration: none;}
+a:visited {color: #31659C;text-decoration: none;}
+a:hover {color: #CE6500;text-decoration: none;}
+form {margin:0px;padding:0px;}
+
+/*master page*/
+#MP {width:90%;}
+.MP_up_left {width:3px; height:3px; background:url('mpage_up_left.gif');}
+.MP_up_right {width:3px; height:3px; background:url('mpage_up_right.gif');}
+.MP_down_left {width:3px; height:3px; background:url('mpage_down_left.gif');}
+.MP_down_right {width:3px; height:3px; background:url('mpage_down_right.gif');}
+.MP_up_center {background:#6795b4;}
+.MP_down_center {background:url('mpage_bottom.gif');}
+.MP_body {border-right: #6795b4 1px solid; background: #fff; border-left: #6795b4 1px solid;font-size:12px}
+.MP_title {background:#6795b4; height:30px; color:#fff; padding-left:10px; font-weight:bold;}
+.MP_tip {border-right: #6795b4 1px solid; padding-right: 20px; border-top: #cadce8 1px solid; padding-left: 20px;background: #ebf1f5; padding-bottom: 20px; border-left: #6795b4 1px solid; color: #666666; line-height: 150%; padding-top: 20px;}
+
+.input_text {border-right: #7f9db9 1px solid; border-top: #7f9db9 1px solid; background: #f7f5e0; border-left: #7f9db9 1px solid; border-bottom: #7f9db9 1px solid; HEIGHT: 16px; width:300px;}
+.hand {cursor:pointer;}
+
+/*page control*/
+.page_change {margin:0px auto;padding:0px;}
+.page_change li{ list-style-type:none; margin:0px; padding:0px; overflow:hidden; float:left;height:30px; line-height:30px; font-size:12px;}    
+.page_change li.displaytxt{text-align:left;}
+.page_change li.prev{width:60px;border:#666666 solid 1px;background:none; display:block; text-align:center; margin-left:5px;}
+.page_change li.list{width:30px;border:#666666 solid 1px;background:none; display:block; text-align:center; margin-left:5px;}
+.page_change li.ellipsis{margin-left:5px;}
+.page_change li.next{width:60px;border:#666666 solid 1px;background:none; display:block; text-align:center; margin-left:5px;}
+.page_change li a{display:block;background:none;width:100%;height:100%;color:#366a95; text-decoration: none;}
+.page_change li a:hover {cursor: pointer; background: #f0f0f3;}
+.page_change li.current {width:30px;border:#666666 solid 1px;background:#f0f0f3; display:block; text-align:center; margin-left:5px;}
+
+.in {height:2px; background:url("m_leftinbg.jpg");width:100%; margin:0px auto; margin-top:2px; margin-bottom:2px; clear:both; font-size:1px;}
+h4 {margin:0;padding:0; font-weight:normal; font-size:12px; line-height:22px;}
+
+/*other*/
+.trspace{height:10px;  font-size:0px;}
+.note {color:#999; margin-left:5px; }
+.required {color:#ff0000}
+.unrequired{color:#fff}
+
+ul.decimal{clear:both;width:90%; margin:0px auto;}
+ul.decimal li{list-style-type:decimal-leading-zero; line-height:22px; clear:both; text-align:left;}

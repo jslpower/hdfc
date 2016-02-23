@@ -1,0 +1,15 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/**********dalian***login*************/
+
+*{ margin:0; padding:0;}
+input:focus,textarea:focus{outline:none;}
+body {background-color: #bdddf5;font-family:"宋体","Arial Narrow";font-size:12px;}
+img{border:0; vertical-align:middle;}
+.wz{ color:#FFFFFF; text-decoration:none; line-height:28px;}
+.login_bj{background:url(../images/images/login_02.jpg) no-repeat; width:469px; height:398px;}
+.login_bjone{background:url(../images/images/login_03.jpg) no-repeat; width:491px; height:398px;}
+.kang{width:152px; height:22px; border:1px solid #000000; padding-left:3px;}
+.kangone{width:76px; height:22px; border:1px solid #000000; padding-left:3px;}
+.login_logo{ position:relative;}
+.login_logo img{ position:absolute; left:20px; top:2px;}

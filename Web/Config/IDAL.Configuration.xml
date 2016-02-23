@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--DAL对象映射-->
+<configuration>
+
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration" />
+  </configSections>
+
+  <unity>
+    <typeAliases>
+      <typeAlias alias="singleton" type="Microsoft.Practices.Unity.ContainerControlledLifetimeManager, Microsoft.Practices.Unity" />
+      <!--公司信息  开始-->
+      <typeAlias alias="ICustomerCareFor" type="EyouSoft.IDAL.CompanyStructure.ICustomerCareFor, EyouSoft.IDAL" />
+      <typeAlias alias="CustomerCareFor" type="EyouSoft.DAL.CompanyStructure.CustomerCareFor, EyouSoft.DAL" />
+      <typeAlias alias="IArea" type="EyouSoft.IDAL.CompanyStructure.IArea, EyouSoft.IDAL" />
+      <typeAlias alias="Area" type="EyouSoft.DAL.CompanyStructure.Area, EyouSoft.DAL" />
+      <typeAlias alias="ISysLoginLog" type="EyouSoft.IDAL.CompanyStructure.ISysLoginLog, EyouSoft.IDAL" />
+      <typeAlias alias="SysLoginLog" type="EyouSoft.DAL.CompanyStructure.SysLoginLog, EyouSoft.DAL" />
+      <typeAlias alias="ISysHandleLogs" type="EyouSoft.IDAL.CompanyStructure.ISysHandleLogs, EyouSoft.IDAL" />
+      <typeAlias alias="SysHandleLogs" type="EyouSoft.DAL.CompanyStructure.SysHandleLogs, EyouSoft.DAL" />
+      <typeAlias alias="ICompanyInfo" type="EyouSoft.IDAL.CompanyStructure.ICompanyInfo, EyouSoft.IDAL" />
+      <typeAlias alias="CompanyInfo" type="EyouSoft.DAL.CompanyStructure.CompanyInfo, EyouSoft.DAL" />
+      <typeAlias alias="IProvince" type="EyouSoft.IDAL.CompanyStructure.IProvince, EyouSoft.IDAL" />
+      <typeAlias alias="Province" type="EyouSoft.DAL.CompanyStructure.Province, EyouSoft.DAL" />
+      <typeAlias alias="ICity" type="EyouSoft.IDAL.CompanyStructure.ICity, EyouSoft.IDAL" />
+      <typeAlias alias="City" type="EyouSoft.DAL.CompanyStructure.City, EyouSoft.DAL" />
+      <typeAlias alias="IDepartment" type="EyouSoft.IDAL.CompanyStructure.IDepartment, EyouSoft.IDAL" />
+      <typeAlias alias="Department" type="EyouSoft.DAL.CompanyStructure.Department, EyouSoft.DAL" />
+      <typeAlias alias="ICompanyUser" type="EyouSoft.IDAL.CompanyStructure.ICompanyUser, EyouSoft.IDAL" />
+      <typeAlias alias="CompanyUser" type="EyouSoft.DAL.CompanyStructure.CompanyUser, EyouSoft.DAL" />
+      <typeAlias alias="ISysRoleManage" type="EyouSoft.IDAL.CompanyStructure.ISysRoleManage, EyouSoft.IDAL" />
+      <typeAlias alias="SysRoleManage" type="EyouSoft.DAL.CompanyStructure.SysRoleManage, EyouSoft.DAL" />
+      <typeAlias alias="ICompanySetting" type="EyouSoft.IDAL.CompanyStructure.ICompanySetting, EyouSoft.IDAL" />
+      <typeAlias alias="CompanySetting" type="EyouSoft.DAL.CompanyStructure.CompanySetting, EyouSoft.DAL" />
+      <typeAlias alias="IYinHangZhangHu" type="EyouSoft.IDAL.CompanyStructure.IYinHangZhangHu, EyouSoft.IDAL" />
+      <typeAlias alias="DYinHangZhangHu" type="EyouSoft.DAL.CompanyStructure.DYinHangZhangHu, EyouSoft.DAL" />
+      <typeAlias alias="ISaleArea" type="EyouSoft.IDAL.CompanyStructure.ISaleArea, EyouSoft.IDAL" />
+      <typeAlias alias="DSaleArea" type="EyouSoft.DAL.CompanyStructure.DSaleArea, EyouSoft.DAL" />
+      <typeAlias alias="INews" type="EyouSoft.IDAL.CompanyStructure.INews, EyouSoft.IDAL" />
+      <typeAlias alias="News" type="EyouSoft.DAL.CompanyStructure.News, EyouSoft.DAL" />
+      <typeAlias alias="IPersonDocument" type="EyouSoft.IDAL.CompanyStructure.IPersonDocument, EyouSoft.IDAL" />
+      <typeAlias alias="PersonDocument" type="EyouSoft.DAL.CompanyStructure.PersonDocument, EyouSoft.DAL" />
+
+      <typeAlias alias="ICompanyTicket" type="EyouSoft.IDAL.CompanyStructure.ICompanyTicket, EyouSoft.IDAL" />
+      <typeAlias alias="DCompanyTicket" type="EyouSoft.DAL.CompanyStructure.DCompanyTicket, EyouSoft.DAL" />
+
+      <typeAlias alias="IRating" type="EyouSoft.IDAL.CompanyStructure.IRating, EyouSoft.IDAL" />
+      <typeAlias alias="Rating" type="EyouSoft.DAL.CompanyStructure.Rating, EyouSoft.DAL" />
+
+      <!--公司信息  结束-->
+
+      <!--财务管理  开始-->
+      <typeAlias alias="IBankBalance" type="EyouSoft.IDAL.FinStructure.IBankBalance, EyouSoft.IDAL" />
+      <typeAlias alias="DBankBalance" type="EyouSoft.DAL.FinStructure.DBankBalance, EyouSoft.DAL" />
+      <typeAlias alias="IChuNaDengZhang" type="EyouSoft.IDAL.FinStructure.IChuNaDengZhang, EyouSoft.IDAL" />
+      <typeAlias alias="DChuNaDengZhang" type="EyouSoft.DAL.FinStructure.DChuNaDengZhang, EyouSoft.DAL" />
+      <typeAlias alias="IShouKuan" type="EyouSoft.IDAL.FinStructure.IShouKuan, EyouSoft.IDAL" />
+      <typeAlias alias="DShouKuan" type="EyouSoft.DAL.FinStructure.DShouKuan, EyouSoft.DAL" />
+      <!--财务管理  开始-->
+
+      <!--客户管理  开始-->
+      <typeAlias alias="ICustomerCare" type="EyouSoft.IDAL.CRM.ICustomerCare, EyouSoft.IDAL" />
+      <typeAlias alias="DCustomerCare" type="EyouSoft.DAL.CRM.DCustomerCare, EyouSoft.DAL" />
+      <typeAlias alias="ICustomer" type="EyouSoft.IDAL.CRM.ICustomer, EyouSoft.IDAL" />
+      <typeAlias alias="DCustomer" type="EyouSoft.DAL.CRM.DCustomer, EyouSoft.DAL" />
+      <typeAlias alias="IBirthday" type="EyouSoft.IDAL.CRM.IBirthday, EyouSoft.IDAL" />
+      <typeAlias alias="DBirthday" type="EyouSoft.DAL.CRM.DBirthday, EyouSoft.DAL" />
+      <!--客户管理  结束-->
+
+
+      <!--客户询价  开始-->
+      <typeAlias alias="IOutreach" type="EyouSoft.IDAL.CustomerQuote.IOutreach, EyouSoft.IDAL" />
+      <typeAlias alias="DOutreach" type="EyouSoft.DAL.CustomerQuote.DOutreach, EyouSoft.DAL" />
+      <typeAlias alias="ICustomerQuote" type="EyouSoft.IDAL.CustomerQuote.ICustomerQuote, EyouSoft.IDAL" />
+      <typeAlias alias="DCustomerQuote" type="EyouSoft.DAL.CustomerQuote.DCustomerQuote, EyouSoft.DAL" />
+      <!--客户询价  结束-->
+
+      <!--统计中心  开始-->
+      <typeAlias alias="ITongJi" type="EyouSoft.IDAL.TongJiStructure.ITongJi, EyouSoft.IDAL" />
+      <typeAlias alias="DTongJi" type="EyouSoft.DAL.TongJiStructure.DTongJi, EyouSoft.DAL" />
+      <!--统计中心  结束-->
+
+      <!--系统信息-->
+      <typeAlias alias="ISys" type="EyouSoft.IDAL.SysStructure.ISys, EyouSoft.IDAL" />
+      <typeAlias alias="DSys" type="EyouSoft.DAL.SysStructure.DSys, EyouSoft.DAL" />
+
+      <!--线路-->
+      <typeAlias alias="IRoute" type="EyouSoft.IDAL.TourStructure.IRoute, EyouSoft.IDAL" />
+      <typeAlias alias="DRoute" type="EyouSoft.DAL.TourStructure.DRoute, EyouSoft.DAL" />
+
+      <!--计调中心-->
+      <typeAlias alias="ITour" type="EyouSoft.IDAL.TourStructure.ITour, EyouSoft.IDAL" />
+      <typeAlias alias="DTour" type="EyouSoft.DAL.TourStructure.DTour, EyouSoft.DAL" />
+
+      <!--团队回访-->
+      <typeAlias alias="ITourReturnVisit" type="EyouSoft.IDAL.TourStructure.ITourReturnVisit, EyouSoft.IDAL" />
+      <typeAlias alias="DTourReturnVisit" type="EyouSoft.DAL.TourStructure.DTourReturnVisit, EyouSoft.DAL" />
+
+      <!--团队报价资料库-->
+      <typeAlias alias="ITourData" type="EyouSoft.IDAL.TourStructure.ITourData, EyouSoft.IDAL" />
+      <typeAlias alias="DTourData" type="EyouSoft.DAL.TourStructure.DTourData, EyouSoft.DAL" />
+
+      <!--确认件短信提醒-->
+      <typeAlias alias="ISMSTourCustomer" type="EyouSoft.IDAL.TourStructure.ISMSTourCustomer, EyouSoft.IDAL" />
+      <typeAlias alias="DSMSTourCustomer" type="EyouSoft.DAL.TourStructure.DSMSTourCustomer, EyouSoft.DAL" />
+
+      <!--地接安排-->
+      <typeAlias alias="IPlanDiJie" type="EyouSoft.IDAL.PlanStructure.IPlanDiJie, EyouSoft.IDAL" />
+      <typeAlias alias="DPlanDiJie" type="EyouSoft.DAL.PlanStructure.DPlanDiJie, EyouSoft.DAL" />
+
+      <!--票务安排-->
+      <typeAlias alias="IPlanTicket" type="EyouSoft.IDAL.PlanStructure.IPlanTicket, EyouSoft.IDAL" />
+      <typeAlias alias="DPlanTicket" type="EyouSoft.DAL.PlanStructure.DPlanTicket, EyouSoft.DAL" />
+
+      <!--供应商-->
+      <typeAlias alias="ISupplier" type="EyouSoft.IDAL.SourceStructure.ISupplier, EyouSoft.IDAL" />
+      <typeAlias alias="DSupplier" type="EyouSoft.DAL.SourceStructure.DSupplier, EyouSoft.DAL" />
+      <typeAlias alias="ISpotSupplier" type="EyouSoft.IDAL.SourceStructure.ISpotSupplier, EyouSoft.IDAL" />
+      <typeAlias alias="DSpotSupplier" type="EyouSoft.DAL.SourceStructure.DSpotSupplier, EyouSoft.DAL" />
+      <typeAlias alias="IRestaurantSupplier" type="EyouSoft.IDAL.SourceStructure.IRestaurantSupplier, EyouSoft.IDAL" />
+      <typeAlias alias="DRestaurantSupplier" type="EyouSoft.DAL.SourceStructure.DRestaurantSupplier, EyouSoft.DAL" />
+      <typeAlias alias="IHotelSupplier" type="EyouSoft.IDAL.SourceStructure.IHotelSupplier, EyouSoft.IDAL" />
+      <typeAlias alias="DHotelSupplier" type="EyouSoft.DAL.SourceStructure.DHotelSupplier, EyouSoft.DAL" />
+      <typeAlias alias="IGuideSupplier" type="EyouSoft.IDAL.SourceStructure.IGuideSupplier, EyouSoft.IDAL" />
+      <typeAlias alias="DGuideSupplier" type="EyouSoft.DAL.SourceStructure.DGuideSupplier, EyouSoft.DAL" />
+
+      <!--短信中心  开始-->
+      <typeAlias alias="IAccount" type="EyouSoft.IDAL.SMSStructure.IAccount, EyouSoft.IDAL" />
+      <typeAlias alias="Account" type="EyouSoft.DAL.SMSStructure.Account, EyouSoft.DAL" />
+      <typeAlias alias="ICommonWords" type="EyouSoft.IDAL.SMSStructure.ICommonWords, EyouSoft.IDAL" />
+      <typeAlias alias="CommonWords" type="EyouSoft.DAL.SMSStructure.CommonWords, EyouSoft.DAL" />
+      <typeAlias alias="ICustomerList" type="EyouSoft.IDAL.SMSStructure.ICustomerList, EyouSoft.IDAL" />
+      <typeAlias alias="CustomerList" type="EyouSoft.DAL.SMSStructure.CustomerList, EyouSoft.DAL" />
+      <typeAlias alias="ISendMessage" type="EyouSoft.IDAL.SMSStructure.ISendMessage, EyouSoft.IDAL" />
+      <typeAlias alias="SendMessage" type="EyouSoft.DAL.SMSStructure.SendMessage, EyouSoft.DAL" />
+      <!--短信中心  结束-->
+
+    </typeAliases>
+    <containers>
+      <container>
+        <types>
+
+          <!--短信中心  开始-->
+          <type type="IAccount" mapTo="Account" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICommonWords" mapTo="CommonWords" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICustomerList" mapTo="CustomerList" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISendMessage" mapTo="SendMessage" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--短信中心  结束-->
+
+          <!--公司信息  开始-->
+          <type type="ICustomerCareFor" mapTo="CustomerCareFor" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IArea" mapTo="Area" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IPersonDocument" mapTo="PersonDocument" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="INews" mapTo="News" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysLoginLog" mapTo="SysLoginLog" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysHandleLogs" mapTo="SysHandleLogs" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyInfo" mapTo="CompanyInfo" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IProvince" mapTo="Province" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICity" mapTo="City" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IDepartment" mapTo="Department" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyUser" mapTo="CompanyUser" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISysRoleManage" mapTo="SysRoleManage" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanySetting" mapTo="CompanySetting" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IYinHangZhangHu" mapTo="DYinHangZhangHu" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISaleArea" mapTo="DSaleArea" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICompanyTicket" mapTo="DCompanyTicket" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IRating" mapTo="Rating" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--公司信息  结束-->
+
+          <!--财务管理  开始-->
+          <type type="IBankBalance" mapTo="DBankBalance" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IChuNaDengZhang" mapTo="DChuNaDengZhang" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IShouKuan" mapTo="DShouKuan" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--财务管理  结束-->
+
+          <!--客户管理  开始-->
+          <type type="ICustomerCare" mapTo="DCustomerCare" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICustomer" mapTo="DCustomer" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IBirthday" mapTo="DBirthday" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--客户管理  结束-->
+
+          <!--客户询价  开始-->
+          <type type="IOutreach" mapTo="DOutreach" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ICustomerQuote" mapTo="DCustomerQuote" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--客户询价  结束-->
+
+          <!--统计中心  开始-->
+          <type type="ITongJi" mapTo="DTongJi" name="">
+            <lifetime type="singleton" />
+          </type>
+          <!--统计中心  结束-->
+
+          <!--系统信息-->
+          <type type="ISys" mapTo="DSys" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <!--线路-->
+          <type type="IRoute" mapTo="DRoute" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <!--计调中心-->
+          <type type="ITour" mapTo="DTour" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <!--团队回访-->
+          <type type="ITourReturnVisit" mapTo="DTourReturnVisit" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <!--团队报价资料库-->
+          <type type="ITourData" mapTo="DTourData" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <!--确认件短信提醒-->
+          <type type="ISMSTourCustomer" mapTo="DSMSTourCustomer" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <!--地接安排-->
+          <type type="IPlanDiJie" mapTo="DPlanDiJie" name="">
+            <lifetime type="singleton" />
+          </type>
+
+
+          <!--票务安排-->
+          <type type="IPlanTicket" mapTo="DPlanTicket" name="">
+            <lifetime type="singleton" />
+          </type>
+
+          <!--供应商-->
+          <type type="ISupplier" mapTo="DSupplier" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="ISpotSupplier" mapTo="DSpotSupplier" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IRestaurantSupplier" mapTo="DRestaurantSupplier" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IHotelSupplier" mapTo="DHotelSupplier" name="">
+            <lifetime type="singleton" />
+          </type>
+          <type type="IGuideSupplier" mapTo="DGuideSupplier" name="">
+            <lifetime type="singleton" />
+          </type>
+
+        </types>
+      </container>
+    </containers>
+  </unity>
+</configuration>

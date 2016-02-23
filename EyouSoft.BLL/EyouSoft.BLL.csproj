@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9EF5495-F131-4C41-9AB4-5299F3234FE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.BLL</RootNamespace>
+    <AssemblyName>EyouSoft.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Document\lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Document\lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EyouSoft.Document\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLBase.cs" />
+    <Compile Include="CompanyStructure\Area.cs" />
+    <Compile Include="CompanyStructure\BCompanyTicket.cs" />
+    <Compile Include="CompanyStructure\BSaleArea.cs" />
+    <Compile Include="CompanyStructure\BYinHangZhangHu.cs" />
+    <Compile Include="CompanyStructure\CustomerCareFor.cs" />
+    <Compile Include="CompanyStructure\News.cs" />
+    <Compile Include="CompanyStructure\PersonDocument.cs" />
+    <Compile Include="CompanyStructure\Rating.cs" />
+    <Compile Include="CRM\BBirthday.cs" />
+    <Compile Include="CRM\BCustomer.cs" />
+    <Compile Include="CRM\BCustomerCare.cs" />
+    <Compile Include="CustomerQuote\BCustomerQuote.cs" />
+    <Compile Include="CustomerQuote\BOutreach.cs" />
+    <Compile Include="FinStructure\BBankBalance.cs" />
+    <Compile Include="FinStructure\BChuNaDengZhang.cs" />
+    <Compile Include="FinStructure\BShouKuan.cs" />
+    <Compile Include="PlanStructure\BPlanDiJie.cs" />
+    <Compile Include="PlanStructure\BPlanTicket.cs" />
+    <Compile Include="SourceStructure\BGuideSupplier.cs" />
+    <Compile Include="SourceStructure\BHotelSupplier.cs" />
+    <Compile Include="SourceStructure\BRestaurantSupplier.cs" />
+    <Compile Include="SourceStructure\BSpotSupplier.cs" />
+    <Compile Include="SourceStructure\BSupplier.cs" />
+    <Compile Include="TongJiStructure\BTongJi.cs" />
+    <Compile Include="TourStructure\BRoute.cs" />
+    <Compile Include="TourStructure\BTour.cs" />
+    <Compile Include="CompanyStructure\City.cs" />
+    <Compile Include="CompanyStructure\CompanyInfo.cs" />
+    <Compile Include="CompanyStructure\CompanySetting.cs" />
+    <Compile Include="CompanyStructure\CompanyUser.cs" />
+    <Compile Include="CompanyStructure\Department.cs" />
+    <Compile Include="CompanyStructure\Province.cs" />
+    <Compile Include="CompanyStructure\SysHandleLogs.cs" />
+    <Compile Include="CompanyStructure\SysLoginLog.cs" />
+    <Compile Include="CompanyStructure\SysRoleManage.cs" />
+    <Compile Include="EyouSoftApplication.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SMSStructure\Account.cs" />
+    <Compile Include="SMSStructure\CommonWords.cs" />
+    <Compile Include="SMSStructure\CustomerList.cs" />
+    <Compile Include="SMSStructure\SendMessage.cs" />
+    <Compile Include="SysStructure\BSys.cs" />
+    <Compile Include="TourStructure\BTourData.cs" />
+    <Compile Include="TourStructure\BTourReturnVisit.cs" />
+    <Compile Include="Web References\SMSStructure.TVoSmsServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SMSStructure.VoSmsServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EyouSoft.BackgroundServices\EyouSoft.BackgroundServices.csproj">
+      <Project>{1B911605-491C-43E0-BD08-841DF5128840}</Project>
+      <Name>EyouSoft.BackgroundServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Cache.Facade\EyouSoft.Cache.Facade.csproj">
+      <Project>{19A8CDE0-4EB5-40B7-A18F-C7123CDB7768}</Project>
+      <Name>EyouSoft.Cache.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Component.Factory\EyouSoft.Component.Factory.csproj">
+      <Project>{728E0C36-DB6C-4AA9-9D07-4BC970A706EA}</Project>
+      <Name>EyouSoft.Component.Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.DAL\EyouSoft.DAL.csproj">
+      <Project>{1D1864DC-1F22-4B4F-B619-E47B29FE899E}</Project>
+      <Name>EyouSoft.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Exception.Facade\EyouSoft.Exception.Facade.csproj">
+      <Project>{FE710F51-E721-4229-8179-2BD7F665AB77}</Project>
+      <Name>EyouSoft.Exception.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.IDAL\EyouSoft.IDAL.csproj">
+      <Project>{66BB5834-BDC3-412D-83D2-3E8E1CE10A47}</Project>
+      <Name>EyouSoft.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Model\EyouSoft.Model.csproj">
+      <Project>{E514E743-7EFC-4CAF-8249-4E72C97109E8}</Project>
+      <Name>EyouSoft.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Security.Membership\EyouSoft.Security.Membership.csproj">
+      <Project>{AFA01A24-E10D-4B4C-BC41-C88537B7B314}</Project>
+      <Name>EyouSoft.Security.Membership</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EyouSoft.Toolkit\EyouSoft.Toolkit.csproj">
+      <Project>{99A84C7E-8F77-45C7-865E-C84478BC1EDC}</Project>
+      <Name>EyouSoft.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:6127/SOAP/TESTSMS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SMSStructure.TVoSmsServices\</RelPath>
+      <UpdateFromURL>http://localhost:6127/SOAP/TESTSMS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EyouSoft_BLL_SMSStructure_TVoSmsServices_TESTSMS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://smc.myvo.cn/SMSWebService/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SMSStructure.VoSmsServices\</RelPath>
+      <UpdateFromURL>http://smc.myvo.cn/SMSWebService/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EyouSoft_BLL_SMSStructure_VoSmsServices_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSStructure.TVoSmsServices\TESTSMS.wsdl" />
+    <None Include="Web References\SMSStructure.VoSmsServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSStructure.VoSmsServices\Service.disco" />
+    <None Include="Web References\SMSStructure.VoSmsServices\Service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SMSStructure.TVoSmsServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SMSStructure.TVoSmsServices\TESTSMS.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

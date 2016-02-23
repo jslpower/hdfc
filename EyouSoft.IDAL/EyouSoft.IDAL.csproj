@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66BB5834-BDC3-412D-83D2-3E8E1CE10A47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.IDAL</RootNamespace>
+    <AssemblyName>EyouSoft.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyStructure\IArea.cs" />
+    <Compile Include="CompanyStructure\ICity.cs" />
+    <Compile Include="CompanyStructure\ICompanyInfo.cs" />
+    <Compile Include="CompanyStructure\ICompanySetting.cs" />
+    <Compile Include="CompanyStructure\ICompanyTicket.cs" />
+    <Compile Include="CompanyStructure\ICompanyUser.cs" />
+    <Compile Include="CompanyStructure\ICustomerCareFor.cs" />
+    <Compile Include="CompanyStructure\IDepartment.cs" />
+    <Compile Include="CompanyStructure\INews.cs" />
+    <Compile Include="CompanyStructure\IPersonDocument.cs" />
+    <Compile Include="CompanyStructure\IProvince.cs" />
+    <Compile Include="CompanyStructure\ISaleArea.cs" />
+    <Compile Include="CompanyStructure\ISysHandleLogs.cs" />
+    <Compile Include="CompanyStructure\ISysLoginLog.cs" />
+    <Compile Include="CompanyStructure\ISysRoleManage.cs" />
+    <Compile Include="CompanyStructure\IYinHangZhangHu.cs" />
+    <Compile Include="CompanyStructure\IRating.cs" />
+    <Compile Include="CRM\IBirthday.cs" />
+    <Compile Include="CRM\ICustomer.cs" />
+    <Compile Include="CRM\ICustomerCare.cs" />
+    <Compile Include="CustomerQuote\ICustomerQuote.cs" />
+    <Compile Include="CustomerQuote\IOutreach.cs" />
+    <Compile Include="FinStructure\IBankBalance.cs" />
+    <Compile Include="FinStructure\IChuNaDengZhang.cs" />
+    <Compile Include="FinStructure\IShouKuan.cs" />
+    <Compile Include="PlanStructure\IPlanDiJie.cs" />
+    <Compile Include="PlanStructure\IPlanTicket.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMSStructure\IAccount.cs" />
+    <Compile Include="SMSStructure\ICommonWords.cs" />
+    <Compile Include="SMSStructure\ICustomerList.cs" />
+    <Compile Include="SMSStructure\ISendMessage.cs" />
+    <Compile Include="SourceStructure\ISupplier.cs" />
+    <Compile Include="SourceStructure\IHotelSupplier.cs" />
+    <Compile Include="SourceStructure\IRestaurantSupplier.cs" />
+    <Compile Include="SourceStructure\ISpotSupplier.cs" />
+    <Compile Include="SourceStructure\IGuideSupplier.cs" />
+    <Compile Include="SysStructure\ISys.cs" />
+    <Compile Include="TongJiStructure\ITongJi.cs" />
+    <Compile Include="TourStructure\IRoute.cs" />
+    <Compile Include="TourStructure\ITourData.cs" />
+    <Compile Include="TourStructure\ITour.cs" />
+    <Compile Include="TourStructure\ITourReturnVisit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EyouSoft.Model\EyouSoft.Model.csproj">
+      <Project>{E514E743-7EFC-4CAF-8249-4E72C97109E8}</Project>
+      <Name>EyouSoft.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDD06D88-6827-4F20-8041-0BAC21F3FD92}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.Document</RootNamespace>
+    <AssemblyName>EyouSoft.Document</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Adpost.Common.Office.dll" />
+    <Content Include="lib\AntiXSSLibrary.dll" />
+    <Content Include="lib\Elmah.dll" />
+    <Content Include="lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\Memcached.ClientLibrary.dll" />
+    <Content Include="lib\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="lib\Microsoft.Office.Interop.Word.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Caching.xml" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Common.xml" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.Data.xml" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="lib\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml" />
+    <Content Include="lib\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="lib\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="lib\Microsoft.Practices.Unity.dll" />
+    <Content Include="lib\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="lib\Newtonsoft.Json.dll" />
+    <Content Include="lib\Newtonsoft.Json.xml" />
+    <Content Include="开发规范\底层开发规范.txt" />
+    <Content Include="数据库日志\20130130日志.sql" />
+    <Content Include="数据库日志\后台服务.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PD\华东风采.pdm" />
+    <None Include="数据库日志\一级栏目.sql" />
+    <None Include="数据库日志\二级栏目.sql" />
+    <None Include="数据库日志\城市.sql" />
+    <None Include="数据库日志\明细权限.sql" />
+    <None Include="数据库日志\省份.sql" />
+    <None Include="目录说明\Web目录文档.doc" />
+    <None Include="策划文档\华东风采.mmap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="打印单据\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

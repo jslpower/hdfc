@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E514E743-7EFC-4CAF-8249-4E72C97109E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EyouSoft.Model</RootNamespace>
+    <AssemblyName>EyouSoft.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyStructure\Area.cs" />
+    <Compile Include="CompanyStructure\City.cs" />
+    <Compile Include="CompanyStructure\CompanyAccount.cs" />
+    <Compile Include="CompanyStructure\CompanyInfo.cs" />
+    <Compile Include="CompanyStructure\CompanySetting.cs" />
+    <Compile Include="CompanyStructure\CompanyTicket.cs" />
+    <Compile Include="CompanyStructure\CompanyUser.cs" />
+    <Compile Include="CompanyStructure\CustomerCareforInfo.cs" />
+    <Compile Include="CompanyStructure\Department.cs" />
+    <Compile Include="CompanyStructure\MSaleArea.cs" />
+    <Compile Include="CompanyStructure\News.cs" />
+    <Compile Include="CompanyStructure\PersonDocument.cs" />
+    <Compile Include="CompanyStructure\Province.cs" />
+    <Compile Include="CompanyStructure\SysHandleLogs.cs" />
+    <Compile Include="CompanyStructure\SysHandleLogsNO.cs" />
+    <Compile Include="CompanyStructure\SysLoginLog.cs" />
+    <Compile Include="CompanyStructure\SysRoleManage.cs" />
+    <Compile Include="CompanyStructure\Rating.cs" />
+    <Compile Include="CRM\MCustomer.cs" />
+    <Compile Include="CustomerQuote\MCustomerQuote.cs" />
+    <Compile Include="CustomerQuote\MOutreach.cs" />
+    <Compile Include="EnumType\CompanyStructure.cs" />
+    <Compile Include="EnumType\CustomerStructure.cs" />
+    <Compile Include="EnumType\FinStructure.cs" />
+    <Compile Include="EnumType\PlanStructure.cs" />
+    <Compile Include="EnumType\PrivsStructure.cs" />
+    <Compile Include="EnumType\SmsStructure.cs" />
+    <Compile Include="EnumType\SourceStructure.cs" />
+    <Compile Include="EnumType\SysStructure.cs" />
+    <Compile Include="EnumType\TourStructure.cs" />
+    <Compile Include="FinStructure\MBankBalance.cs" />
+    <Compile Include="FinStructure\MChuNaDengZhang.cs" />
+    <Compile Include="FinStructure\MShouKuan.cs" />
+    <Compile Include="PlanStructure\MPlanTicket.cs" />
+    <Compile Include="PlanStructure\MPlanDiJie.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMSStructure\AccountInfo.cs" />
+    <Compile Include="SMSStructure\CommonWordClass.cs" />
+    <Compile Include="SMSStructure\CommonWords.cs" />
+    <Compile Include="SMSStructure\CustomerClass.cs" />
+    <Compile Include="SMSStructure\CustomerList.cs" />
+    <Compile Include="SMSStructure\PayMoneyInfo.cs" />
+    <Compile Include="SMSStructure\SendDetail.cs" />
+    <Compile Include="SMSStructure\SendMessageInfo.cs" />
+    <Compile Include="SMSStructure\SendTotal.cs" />
+    <Compile Include="SMSStructure\SMSSystemConfig.cs" />
+    <Compile Include="SourceStructure\MGuideSupplier.cs" />
+    <Compile Include="SourceStructure\MHotelSupplier.cs" />
+    <Compile Include="SourceStructure\MRestaurantSupplier.cs" />
+    <Compile Include="SourceStructure\MSpotSupplier.cs" />
+    <Compile Include="SourceStructure\MSupplier.cs" />
+    <Compile Include="SSOStructure\MUserInfo.cs" />
+    <Compile Include="SSOStructure\MWebmasterInfo.cs" />
+    <Compile Include="SysStructure\MSysInfo.cs" />
+    <Compile Include="SysStructure\SysDomain.cs" />
+    <Compile Include="TongJiStructure\TongJi.cs" />
+    <Compile Include="TourStructure\MRoute.cs" />
+    <Compile Include="TourStructure\MTourData.cs" />
+    <Compile Include="TourStructure\MTour.cs" />
+    <Compile Include="TourStructure\MTourReturnVisit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EyouSoft.Toolkit\EyouSoft.Toolkit.csproj">
+      <Project>{99A84C7E-8F77-45C7-865E-C84478BC1EDC}</Project>
+      <Name>EyouSoft.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
